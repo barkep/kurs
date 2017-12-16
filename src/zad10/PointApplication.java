@@ -23,18 +23,22 @@ public class PointApplication {
         			set.addX(point);
         			break;
         		case(ADD_Y):
-        			set.addX(point);
+        			set.addY(point);
         			break;
         		case(MINUS_X):
-        			set.addX(point);
+        			set.minusX(point);
         			break;
     			case(MINUS_Y):
-    				set.addX(point);
+    				set.minusY(point);
     				break;
+    			case (0):
+    				break;
+    			default:
+    				System.out.println("Podano z³¹ wartoœæ");
+    			break;
         		}
         }
         while(a!=0); 
-        set.addX(point);
         System.out.println(point.x+"   "+point.y);
 
     }
