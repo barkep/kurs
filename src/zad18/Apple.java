@@ -8,6 +8,7 @@ public class Apple extends Fruit {
 		setOdmiana(odmiana);
 	}
 	
+	@Override
 	void printInfo() {
 		super.printInfo();
 		System.out.print(": "+getOdmiana());
